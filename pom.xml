@@ -33,6 +33,12 @@
 		</developer>
 	</developers>
 
+	<scm>
+		<connection>scm:git@github.com:uilya/vilya.git</connection>
+		<developerConnection>scm:git@github.com:uilya/vilya.git</developerConnection>
+		<url>git@github.com:uilya/vilya.git</url>
+	</scm>
+
 	<distributionManagement>
 		<snapshotRepository>
 			<id>sonatype</id>
