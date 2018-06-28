@@ -5,17 +5,21 @@
 
 	<groupId>io.vilya</groupId>
 	<artifactId>vilya-parent</artifactId>
-	<version>1.0.0.1</version>
+	<version>1.0.2</version>
 	<name>vilya-parent</name>
 	<description>internal library</description>
 	<url>https://github.com/uilya/vilya</url>
-	
+
 	<packaging>pom</packaging>
-	
+
 	<modules>
 		<module>vilya-common</module>
 		<module>vilya-dependencies</module>
 	</modules>
+
+	<properties>
+		<vilya.version>1.0.0</vilya.version>
+	</properties>
 
 	<licenses>
 		<license>
