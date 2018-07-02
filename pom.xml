@@ -5,7 +5,7 @@
 
 	<groupId>io.vilya</groupId>
 	<artifactId>vilya-parent</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<name>vilya-parent</name>
 	<description>internal library</description>
 	<url>https://github.com/uilya/vilya</url>
