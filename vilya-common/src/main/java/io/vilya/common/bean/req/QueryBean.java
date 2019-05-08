@@ -1,7 +1,7 @@
 package io.vilya.common.bean.req;
 
 /**
- * @author iamaprin
+ * @author erkea
  * @since 2018年3月19日 上午12:15:05
  */
 public class QueryBean {

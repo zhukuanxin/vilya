@@ -1,7 +1,7 @@
 package io.vilya.common.api;
 
 /**
- * @author iamaprin
+ * @author erkea
  * @since 2017年10月29日 下午2:08:27
  */
 public class RestResponse {
@@ -10,19 +10,9 @@ public class RestResponse {
 	
 	private String message;
 	
-	private long systemTime;
-	
 	private Object data;
-
-	public RestResponse() {
-		this(null);
-	}
 	
-	public RestResponse(Object data) {
-		code = ResultCode.SUCC;
-		systemTime = System.currentTimeMillis();
-		this.data = data;
-	}
+	private long systemTime = System.currentTimeMillis();
 	
 	public Integer getCode() {
 		return code;
@@ -53,6 +43,24 @@ public class RestResponse {
 	public RestResponse setData(Object data) {
 		this.data = data;
 		return this;
+	}
+	
+	public static RestResponse success() {
+		return success(null);
+	}
+	
+	public static RestResponse success(Object data) {
+		RestResponse response = new RestResponse();
+		response.code = ResultCode.SUCC;
+		response.systemTime = System.currentTimeMillis();
+		return response;
+	}
+	
+	public static RestResponse failure(String message) {
+		RestResponse response = new RestResponse();
+		response.code = ResultCode.FAIL;
+		response.message = message;
+		return response;
 	}
 	
 }

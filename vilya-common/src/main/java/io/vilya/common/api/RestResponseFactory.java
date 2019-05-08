@@ -3,7 +3,7 @@ package io.vilya.common.api;
 import java.util.List;
 
 /**
- * @author iamaprin
+ * @author erkea
  * @since 2018年3月19日 上午7:52:47
  */
 public class RestResponseFactory {
@@ -23,7 +23,7 @@ public class RestResponseFactory {
 	}
 	
 	public static RestResponse create(Object data) {
-		return new RestResponse(data);
+		return RestResponse.success(data);
 	}
 	
 	public static <T> RestResponse create(List<T> list) {

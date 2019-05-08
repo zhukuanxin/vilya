@@ -3,7 +3,7 @@ package io.vilya.common.api;
 import java.util.List;
 
 /**
- * @author iamaprin
+ * @author erkea
  * @since 2017年10月29日 下午3:45:00
  */
 public class ListBean<T> {

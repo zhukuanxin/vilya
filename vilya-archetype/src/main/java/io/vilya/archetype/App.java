@@ -3,7 +3,7 @@ package io.vilya.archetype;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author iamaprin
+ * @author erkea
  * @time 2018年6月28日 下午10:22:47
  */
 @Slf4j

@@ -3,7 +3,7 @@ package io.vilya.common.api;
 import java.util.List;
 
 /**
- * @author iamaprin
+ * @author erkea
  * @since 2017年10月29日 下午3:42:09
  */
 public class RestListResponse<T> extends RestResponse {

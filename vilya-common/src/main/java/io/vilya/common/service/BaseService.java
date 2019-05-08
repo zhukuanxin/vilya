@@ -5,14 +5,14 @@ import java.util.List;
 import io.vilya.common.bean.req.QueryBean;
 
 public interface BaseService<T> {
-	
-    T get(Integer id);
 
-    List<T> list(QueryBean page, T record);
+	T get(Integer id);
 
-    void delete(Integer id);
+	List<T> list(QueryBean page, T record);
 
-    void save(T record);
+	void delete(Integer id);
 
-    void update(T record);
+	void save(T record);
+
+	void update(T record);
 }

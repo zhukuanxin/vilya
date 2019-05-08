@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * @author iamaprin
+ * @author erkea
  * @since 2018年6月28日 下午9:31:43
  * @see <a href="https://github.com/iluwatar/java-design-patterns/tree/master/converter">converter</a>
  */
