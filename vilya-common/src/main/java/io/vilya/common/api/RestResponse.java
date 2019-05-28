@@ -45,18 +45,19 @@ public class RestResponse {
 		return this;
 	}
 	
-	public static RestResponse success() {
-		return success(null);
+	public static RestResponse succeed() {
+		return succeed(null);
 	}
 	
-	public static RestResponse success(Object data) {
+	public static RestResponse succeed(Object data) {
 		RestResponse response = new RestResponse();
 		response.code = ResultCode.SUCC;
 		response.systemTime = System.currentTimeMillis();
+		response.data = data;
 		return response;
 	}
 	
-	public static RestResponse failure(String message) {
+	public static RestResponse failed(String message) {
 		RestResponse response = new RestResponse();
 		response.code = ResultCode.FAIL;
 		response.message = message;
